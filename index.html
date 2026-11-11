@@ -1,93 +1,312 @@
+
 <!DOCTYPE html>
 <html lang="hi">
-<meta name="google-site-verification" content="yOuQ8IAsXFEiX1o4j9EjOd8_LqtY3emvMUubEnBfrPs" />
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Gupta Electrician - Asansol में AC, Refrigerator, Washing Machine, Geyser, Cooler और Home Appliance Repair Service.">
-  <meta name="theme-color" content="#092b4c">
-  <title>Gupta Electrician | AC & Home Appliance Service - Asansol</title>
-  <style>
-    :root{--navy:#092b4c;--blue:#0879c9;--cyan:#16b8d4;--ink:#172b3a;--muted:#627486;--bg:#f3f7fb;--white:#fff}
-    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Arial,"Noto Sans Devanagari",sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
-    a{text-decoration:none;color:inherit}.wrap{width:min(1120px,92%);margin:auto}
-    header{background:var(--navy);color:white;position:sticky;top:0;z-index:10;box-shadow:0 3px 14px #001a3028}
-    .nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:14px 0}.brand{font-size:1.25rem;font-weight:800;letter-spacing:.3px}.brand span{color:#4ed8ed}
-    nav{display:flex;gap:18px;flex-wrap:wrap;font-size:.94rem}nav a:hover{color:#70e4f2}
-    .hero{background:linear-gradient(120deg,#082744ed,#0879c9d9),url('https://images.unsplash.com/photo-1631545806609-7e2b6b1a7d8a?auto=format&fit=crop&w=1800&q=80') center/cover;color:white;padding:76px 0 68px}
-    .hero-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:28px;align-items:center}.tag{display:inline-block;background:#ffffff20;border:1px solid #ffffff55;padding:6px 12px;border-radius:30px;font-size:.85rem}
-    h1{font-size:clamp(2.1rem,5vw,3.7rem);line-height:1.12;margin:16px 0}.hero p{font-size:1.1rem;max-width:650px;color:#e5f4ff}
-    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.btn{display:inline-block;border:0;border-radius:9px;padding:12px 18px;font-weight:700;cursor:pointer;font-size:1rem}.primary{background:#19c56b;color:#062b1b}.light{background:white;color:var(--navy)}.outline{border:1px solid #ffffff90;color:white}
-    .hero-card{background:#ffffff16;border:1px solid #ffffff45;border-radius:18px;padding:24px;backdrop-filter:blur(5px)}.hero-card strong{font-size:1.35rem;display:block}.hero-card p{font-size:.95rem;margin-bottom:0}
-    section{padding:58px 0}.section-head{text-align:center;margin:0 auto 30px;max-width:700px}.section-head h2{font-size:2rem;color:var(--navy);margin:0 0 8px}.section-head p{color:var(--muted);margin:0}
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service,.panel,.review{background:white;border-radius:15px;padding:22px;box-shadow:0 5px 22px #092b4c0b;border:1px solid #e6edf4}
-    .ico{font-size:2rem}.service h3{margin:8px 0 4px;color:var(--navy)}.service p{margin:0;color:var(--muted);font-size:.95rem}
-    .band{background:#e7f4fc}.two{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start}
-    .check{padding:0;list-style:none}.check li{margin:10px 0}.check li:before{content:"✓";color:#0b9e5b;font-weight:bold;margin-right:10px}
-    .form{display:grid;gap:12px}.form input,.form select,.form textarea{width:100%;padding:12px;border:1px solid #cbd8e4;border-radius:8px;font:inherit;background:white}.form textarea{min-height:100px;resize:vertical}
-    .muted{color:var(--muted)}.notice{font-size:.86rem;color:var(--muted)}.review-note{background:#f0f8ff;border-left:4px solid var(--blue);padding:14px;border-radius:8px}
-    footer{background:#061e34;color:#dceaf5;padding:30px 0}.footer-grid{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.small{font-size:.9rem;color:#b9ccdc}
-    .float{position:fixed;right:18px;bottom:18px;background:#19c56b;color:#062b1b;padding:13px 17px;border-radius:40px;font-weight:800;box-shadow:0 5px 18px #0003;z-index:20}
-    @media(max-width:760px){.hero-grid,.two{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.nav{align-items:flex-start;flex-direction:column}nav{gap:12px}.hero{padding:54px 0}}
-    @media(max-width:480px){.grid{grid-template-columns:1fr}.hero-card{padding:18px}section{padding:44px 0}}
-  </style>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Gupta Electrician - AC, Fridge, Washing Machine and Home Appliance Repair Service in Asansol.">
+<meta name="theme-color" content="#092b4c">
+<title>Gupta Electrician | Home Appliance Repair</title>
+<style>
+:root{--navy:#092b4c;--blue:#0879c9;--gold:#e9ad35;--bg:#f3f7fb;--ink:#172b3a}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+a{text-decoration:none;color:inherit}
+.wrap{width:min(1120px,92%);margin:auto}
+header{background:var(--navy);color:white;position:sticky;top:0;z-index:10}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:13px 0;gap:15px}
+.brand{font-weight:900;font-size:21px}
+.brand span{color:var(--gold)}
+.logo{display:inline-flex;align-items:center;gap:9px}
+.logo-icon{background:var(--gold);color:#092b4c;padding:8px;border-radius:10px;font-size:23px}
+nav{display:flex;gap:15px;flex-wrap:wrap;font-size:14px}
+nav a:hover{color:var(--gold)}
+.hero{background:linear-gradient(120deg,#082744ed,#0879c9d9),url('https://images.unsplash.com/photo-1631545806609-7e2b6b1a7d8a?auto=format&fit=crop&w=1800&q=80') center/cover;color:white;padding:75px 0}
+.hero-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:25px;align-items:center}
+.tag{background:#ffffff22;padding:6px 13px;border-radius:25px}
+h1{font-size:clamp(30px,5vw,55px);line-height:1.15}
+.hero p{font-size:18px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
+.btn{display:inline-block;padding:12px 18px;border-radius:9px;font-weight:bold;border:0;cursor:pointer}
+.green{background:#19c56b;color:#062b1b}
+.white{background:white;color:var(--navy)}
+.gold{background:var(--gold);color:#172b3a}
+.hero-card,.panel,.service,.gallery-card,.review-card{background:white;border-radius:15px;padding:20px;box-shadow:0 5px 22px #092b4c12}
+.hero-card{background:#ffffff18;border:1px solid #ffffff55;color:white}
+section{padding:55px 0}
+.section-head{text-align:center;margin:0 auto 30px;max-width:700px}
+.section-head h2{color:var(--navy);font-size:30px;margin-bottom:5px}
+.section-head p,.muted{color:#627486}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.service h3{color:var(--navy);margin:5px 0}
+.ico{font-size:35px}
+.band{background:#e7f4fc}
+.price{font-weight:bold;color:#0879c9}
+.gallery-card{padding:0;overflow:hidden}
+.gallery-card img{width:100%;height:190px;object-fit:cover;display:block}
+.gallery-card h3{padding:0 15px}
+.gallery-card p{padding:0 15px;color:#627486}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start}
+.form{display:grid;gap:12px}
+.form input,.form textarea,.form select{width:100%;padding:13px;border:1px solid #cbd8e4;border-radius:8px;font:inherit}
+.form textarea{min-height:100px}
+.stars{display:flex;gap:8px;font-size:35px;color:#e9ad35;cursor:pointer}
+.stars span{opacity:.35}
+.stars span.active{opacity:1}
+.notice{font-size:13px;color:#627486}
+.review-note{background:#fff8e8;padding:15px;border-radius:9px}
+.mapbox{border-radius:14px;overflow:hidden;background:#dcebf5;padding:25px;text-align:center}
+footer{background:#061e34;color:white;padding:30px 0}
+footer .small{color:#b9ccdc}
+.float{position:fixed;right:15px;bottom:15px;background:#19c56b;padding:13px 18px;border-radius:30px;font-weight:bold;z-index:20}
+@media(max-width:760px){
+.hero-grid,.two{grid-template-columns:1fr}
+.grid{grid-template-columns:1fr 1fr}
+.nav{flex-direction:column;align-items:flex-start}
+.hero{padding:50px 0}
+}
+@media(max-width:480px){.grid{grid-template-columns:1fr}nav{gap:10px}}
+</style>
 </head>
 <body>
-<header><div class="wrap nav">
-  <a class="brand" href="#home">GUPTA <span>ELECTRICIAN</span></a>
-  <nav><a href="#home">Home</a><a href="#services">Services</a><a href="#about">About</a><a href="#booking">Booking</a><a href="#contact">Contact</a></nav>
-</div></header>
+
+<header>
+<div class="wrap nav">
+<a class="brand logo" href="#home">
+<span class="logo-icon">🔧</span>
+<span>GUPTA <span>ELECTRICIAN</span></span>
+</a>
+<nav>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#prices">Charges</a>
+<a href="#reviews">Reviews</a>
+<a href="#contact">Contact</a>
+</nav>
+</div>
+</header>
+
 <main>
-<section class="hero" id="home"><div class="wrap hero-grid">
-  <div><span class="tag">ASANSOL, WEST BENGAL</span>
-    <h1>AC और Home Appliance<br>Repair Service</h1>
-    <p>आपके घर के AC, Refrigerator, Washing Machine और दूसरे घरेलू उपकरणों की रिपेयरिंग, सर्विसिंग और इंस्टॉलेशन के लिए संपर्क करें।</p>
-    <div class="actions"><a class="btn primary" href="https://wa.me/917908755832?text=Namaste%20Gupta%20Electrician%2C%20mujhe%20service%20book%20karni%20hai." target="_blank" rel="noopener">WhatsApp पर बुक करें</a><a class="btn light" href="tel:+917908755832">📞 अभी कॉल करें</a></div>
-  </div>
-  <div class="hero-card"><strong>Gupta Electrician</strong><p>विश्वसनीय घरेलू उपकरण सर्विस के लिए आपका स्थानीय सर्विस संपर्क।</p><hr style="border-color:#ffffff55"><p><b>फोन:</b> +91 79087 55832</p><p><b>सेवा क्षेत्र:</b> Asansol और आसपास</p></div>
-</div></section>
+<section class="hero" id="home">
+<div class="wrap hero-grid">
+<div>
+<span class="tag">ASANSOL, WEST BENGAL</span>
+<h1>AC & Home Appliance Repair Service</h1>
+<p>AC, Refrigerator, Washing Machine, Geyser और सभी घरेलू उपकरणों की Repairing और Servicing के लिए संपर्क करें।</p>
+<div class="actions">
+<a class="btn green" href="https://wa.me/917908755832" target="_blank">WhatsApp Booking</a>
+<a class="btn white" href="tel:+917908755832">📞 Call Now</a>
+</div>
+</div>
+<div class="hero-card">
+<div style="font-size:45px">🔧</div>
+<h2>Gupta Electrician</h2>
+<p>AC & Home Appliance Specialist</p>
+<hr>
+<p>📞 7908755832</p>
+<p>📍 Asansol, West Bengal</p>
+</div>
+</div>
+</section>
 
-<section id="services"><div class="wrap"><div class="section-head"><h2>हमारी सर्विस</h2><p>आपके घरेलू उपकरणों के लिए रिपेयरिंग और मेंटेनेंस सहायता।</p></div>
+<section id="services">
+<div class="wrap">
+<div class="section-head">
+<h2>Our Services</h2>
+<p>सभी प्रकार के घरेलू उपकरणों की Repairing और Servicing.</p>
+</div>
 <div class="grid">
-  <article class="service"><div class="ico">❄️</div><h3>AC Service & Repair</h3><p>AC servicing, installation, cooling problem और सामान्य repair.</p></article>
-  <article class="service"><div class="ico">🧊</div><h3>Refrigerator Repair</h3><p>फ्रिज cooling problem और सामान्य refrigerator repair.</p></article>
-  <article class="service"><div class="ico">🫧</div><h3>Washing Machine</h3><p>Washing machine की जाँच और repair service.</p></article>
-  <article class="service"><div class="ico">🚿</div><h3>Geyser Repair</h3><p>Geyser की जाँच, servicing और repair.</p></article>
-  <article class="service"><div class="ico">🍲</div><h3>Induction & Microwave</h3><p>Induction oven और microwave की जाँच व repair.</p></article>
-  <article class="service"><div class="ico">🌬️</div><h3>Cooler Repair</h3><p>Air cooler की servicing और सामान्य repair.</p></article>
-</div></div></section>
+<article class="service"><div class="ico">❄️</div><h3>AC Service & Repair</h3><p>AC Installation, Servicing और Cooling Problem.</p></article>
+<article class="service"><div class="ico">🧊</div><h3>Refrigerator Repair</h3><p>Fridge Cooling और अन्य Repairing.</p></article>
+<article class="service"><div class="ico">🫧</div><h3>Washing Machine</h3><p>Washing Machine Checking और Repair.</p></article>
+<article class="service"><div class="ico">🚿</div><h3>Geyser Repair</h3><p>Geyser Servicing और Repair.</p></article>
+<article class="service"><div class="ico">🍲</div><h3>Induction & Microwave</h3><p>Induction और Microwave Repair.</p></article>
+<article class="service"><div class="ico">🌬️</div><h3>Cooler Repair</h3><p>Air Cooler Servicing और Repair.</p></article>
+</div>
+</div>
+</section>
 
-<section class="band" id="about"><div class="wrap two">
-  <div><div class="section-head" style="text-align:left;margin:0 0 16px"><h2>Gupta Electrician के बारे में</h2><p>Asansol, West Bengal में AC और home appliance service के लिए संपर्क करें।</p></div>
-  <ul class="check"><li>सीधे फोन या WhatsApp से संपर्क</li><li>काम शुरू करने से पहले समस्या और अनुमानित खर्च पर बात</li><li>आपकी सुविधा के अनुसार सर्विस अपॉइंटमेंट</li><li>काम के बाद ग्राहक से feedback लेने की सुविधा</li></ul></div>
-  <div class="panel"><h3 style="margin-top:0;color:var(--navy)">सर्विस कैसे बुक करें?</h3><ol><li>नीचे booking form भरें।</li><li>WhatsApp खुलेगा और आपका संदेश तैयार होगा।</li><li>समय और सर्विस की पुष्टि फोन पर करें।</li></ol><p class="notice">नोट: यह शुरुआती वेबसाइट है। बुकिंग WhatsApp संदेश के जरिए भेजी जाएगी; वेबसाइट अपने आप appointment confirm नहीं करती।</p></div>
-</div></section>
+<section class="band" id="gallery">
+<div class="wrap">
+<div class="section-head">
+<h2>Repairing Work Gallery</h2>
+<p>हमारी Home Appliance Repairing Services.</p>
+</div>
+<div class="grid">
+<article class="gallery-card">
+<img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=700&q=80" alt="Electrical repair work">
+<h3>AC & Electrical Work</h3><p>Repairing and Maintenance</p>
+</article>
+<article class="gallery-card">
+<img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=700&q=80" alt="Technician working">
+<h3>Technician Work</h3><p>Professional Repairing</p>
+</article>
+<article class="gallery-card">
+<img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=700&q=80" alt="Repair tools">
+<h3>Repairing Tools</h3><p>Equipment Checking</p>
+</article>
+<article class="gallery-card">
+<img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=700&q=80" alt="Technician">
+<h3>Appliance Service</h3><p>Home Appliance Work</p>
+</article>
+<article class="gallery-card">
+<img src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&w=700&q=80" alt="Technician equipment">
+<h3>Electrical Maintenance</h3><p>Checking and Repair</p>
+</article>
+<article class="gallery-card">
+<img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=700&q=80" alt="Repair workshop">
+<h3>Service Work</h3><p>Home Service Support</p>
+</article>
+</div>
+<p class="notice">नोट: ये उदाहरण के लिए बाहरी Stock Photos हैं, आपके वास्तविक काम की तस्वीरें नहीं।</p>
+</div>
+</section>
 
-<section id="booking"><div class="wrap two">
-  <div><div class="section-head" style="text-align:left;margin:0 0 16px"><h2>Service Booking</h2><p>अपनी जानकारी भरें। आपका booking message WhatsApp पर खुलेगा।</p></div>
-  <form class="form" id="bookingForm">
-    <input id="customer" placeholder="आपका नाम" required>
-    <input id="phone" placeholder="आपका मोबाइल नंबर" inputmode="tel" required>
-    <select id="appliance" required><option value="">कौन-सी सर्विस चाहिए?</option><option>AC</option><option>Refrigerator</option><option>Washing Machine</option><option>Geyser</option><option>Induction / Microwave</option><option>Cooler</option><option>Other</option></select>
-    <input id="area" placeholder="आपका इलाका / मोहल्ला" required>
-    <textarea id="problem" placeholder="समस्या के बारे में लिखें (वैकल्पिक)"></textarea>
-    <button class="btn primary" type="submit">WhatsApp पर Booking भेजें</button>
-  </form></div>
-  <div class="panel" id="contact"><h2 style="color:var(--navy);margin-top:0">Contact Details</h2><p><b>Business:</b> Gupta Electrician</p><p><b>Service Area:</b> Asansol, West Bengal</p><p><b>Mobile:</b> <a href="tel:+917908755832">7908755832</a></p><p><b>WhatsApp:</b> <a href="https://wa.me/917908755832" target="_blank" rel="noopener">Chat on WhatsApp</a></p><p><b>Timing:</b> कृपया कॉल करके उपलब्धता पूछें।</p><div class="review-note"><b>Customer Reviews</b><br>ग्राहक से काम पूरा होने के बाद अपनी वास्तविक rating और feedback WhatsApp पर भेजने के लिए कहें। भविष्य में verified review section जोड़ा जा सकता है।</div></div>
-</div></section>
+<section id="prices">
+<div class="wrap">
+<div class="section-head">
+<h2>Service Charges</h2>
+<p>सर्विस की कीमत जानने के लिए हमसे संपर्क करें।</p>
+</div>
+<div class="grid">
+<article class="service"><h3>❄️ AC Service & Repair</h3><p class="price">Contact for Price</p></article>
+<article class="service"><h3>🧊 Refrigerator Repair</h3><p class="price">Contact for Price</p></article>
+<article class="service"><h3>🫧 Washing Machine</h3><p class="price">Contact for Price</p></article>
+<article class="service"><h3>🚿 Geyser Repair</h3><p class="price">Contact for Price</p></article>
+<article class="service"><h3>🍲 Induction & Microwave</h3><p class="price">Contact for Price</p></article>
+<article class="service"><h3>🌬️ Cooler Repair</h3><p class="price">Contact for Price</p></article>
+</div>
+</div>
+</section>
+
+<section class="band" id="reviews">
+<div class="wrap two">
+<div>
+<div class="section-head" style="text-align:left">
+<h2>⭐ Customer Reviews</h2>
+<p>अपना अनुभव हमारे साथ साझा करें।</p>
+</div>
+<div class="panel">
+<h3>Google पर Review दें</h3>
+<p>हमारी सर्विस पसंद आई? Google पर अपना वास्तविक अनुभव और Rating दें।</p>
+<a class="btn gold" href="https://maps.app.goo.gl/BKFj3RB5Evh1ZmtbA" target="_blank">⭐ Google Maps पर Review दें</a>
+<p class="notice">Google Maps पर खुलने के बाद Review या Write a Review विकल्प चुनें।</p>
+</div>
+</div>
+<div class="panel">
+<h3>Website Feedback Form</h3>
+<form class="form" id="reviewForm">
+<input id="reviewName" placeholder="आपका नाम" required>
+<label><b>अपनी Rating चुनें</b></label>
+<div class="stars" id="stars" aria-label="Star rating">
+<span data-value="1">★</span><span data-value="2">★</span><span data-value="3">★</span><span data-value="4">★</span><span data-value="5">★</span>
+</div>
+<textarea id="reviewText" placeholder="अपना Feedback लिखें" required></textarea>
+<button class="btn green" type="submit">WhatsApp पर Feedback भेजें</button>
+</form>
+<p class="notice">यह Form Feedback WhatsApp पर भेजता है। सभी ग्राहकों के Reviews वेबसाइट पर अपने आप दिखाने के लिए Database जोड़ना होगा।</p>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="wrap two">
+<div class="panel">
+<h2>Contact Details</h2>
+<p><b>Business:</b> Gupta Electrician</p>
+<p><b>Mobile:</b> <a href="tel:+917908755832">7908755832</a></p>
+<p><b>WhatsApp:</b> <a href="https://wa.me/917908755832">Chat Now</a></p>
+<p><b>Service Area:</b> Asansol, West Bengal</p>
+<a class="btn green" href="https://wa.me/917908755832">Contact for Service</a>
+</div>
+<div class="mapbox">
+<div style="font-size:42px">📍</div>
+<h2>Our Google Maps Location</h2>
+<p>दुकान की Location और Directions देखने के लिए नीचे क्लिक करें।</p>
+<a class="btn gold" href="https://maps.app.goo.gl/BKFj3RB5Evh1ZmtbA" target="_blank">Open Google Maps</a>
+</div>
+</div>
+</section>
+
+<section id="booking" class="band">
+<div class="wrap two">
+<div>
+<div class="section-head" style="text-align:left">
+<h2>Service Booking</h2>
+<p>अपनी जानकारी भरें और WhatsApp से Booking करें।</p>
+</div>
+<form class="form panel" id="bookingForm">
+<input id="customer" placeholder="आपका नाम" required>
+<input id="phone" placeholder="आपका मोबाइल नंबर" inputmode="tel" required>
+<select id="appliance" required>
+<option value="">कौन-सी सर्विस चाहिए?</option>
+<option>AC</option><option>Refrigerator</option>
+<option>Washing Machine</option><option>Geyser</option>
+<option>Induction / Microwave</option><option>Cooler</option><option>Other</option>
+</select>
+<input id="area" placeholder="आपका इलाका / मोहल्ला" required>
+<textarea id="problem" placeholder="समस्या (वैकल्पिक)"></textarea>
+<button class="btn green" type="submit">WhatsApp पर Booking भेजें</button>
+</form>
+</div>
+<div class="panel">
+<h2>Gupta Electrician</h2>
+<p>AC और Home Appliance Repairing के लिए संपर्क करें।</p>
+<ul>
+<li>Direct Call Support</li>
+<li>WhatsApp Booking</li>
+<li>Home Service</li>
+<li>Customer Feedback</li>
+</ul>
+</div>
+</div>
+</section>
 </main>
-<footer><div class="wrap footer-grid"><div><b>GUPTA ELECTRICIAN</b><div class="small">AC & Home Appliance Service · Asansol, West Bengal</div></div><div class="small">© <span id="year"></span> Gupta Electrician. All rights reserved.</div></div></footer>
-<a class="float" href="https://wa.me/917908755832?text=Namaste%2C%20mujhe%20service%20chahiye." target="_blank" rel="noopener">WhatsApp</a>
+
+<footer>
+<div class="wrap">
+<div class="logo"><span class="logo-icon">🔧</span><b>GUPTA ELECTRICIAN</b></div>
+<p class="small">AC & Home Appliance Service · Asansol, West Bengal</p>
+<p class="small">© <span id="year"></span> Gupta Electrician. All rights reserved.</p>
+</div>
+</footer>
+
+<a class="float" href="https://wa.me/917908755832" target="_blank">WhatsApp</a>
+
 <script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-  document.getElementById('bookingForm').addEventListener('submit', function(e){
-    e.preventDefault();
-    const name=document.getElementById('customer').value.trim();
-    const phone=document.getElementById('phone').value.trim();
-    const appliance=document.getElementById('appliance').value;
-    const area=document.getElementById('area').value.trim();
-    const problem=document.getElementById('problem').value.trim();
-    const message=`Namaste Gupta Electrician!%0AName: ${encodeURIComponent(name)}%0ACustomer Mobile: ${encodeURIComponent(phone)}%0AService: ${encodeURIComponent(appliance)}%0AArea: ${encodeURIComponent(area)}%0AProblem: ${encodeURIComponent(problem)}`;
-    window.open('https://wa.me/917908755832?text='+message,'_blank','noopener');
-  });
+document.getElementById('year').textContent=new Date().getFullYear();
+
+document.getElementById('bookingForm').addEventListener('submit',function(e){
+e.preventDefault();
+const name=document.getElementById('customer').value.trim();
+const phone=document.getElementById('phone').value.trim();
+const appliance=document.getElementById('appliance').value;
+const area=document.getElementById('area').value.trim();
+const problem=document.getElementById('problem').value.trim();
+const message=`Namaste Gupta Electrician!\nName: ${name}\nCustomer Mobile: ${phone}\nService: ${appliance}\nArea: ${area}\nProblem: ${problem}`;
+window.open('https://wa.me/917908755832?text='+encodeURIComponent(message),'_blank');
+});
+
+let selectedRating=0;
+document.querySelectorAll('#stars span').forEach(star=>{
+star.addEventListener('click',function(){
+selectedRating=Number(this.dataset.value);
+document.querySelectorAll('#stars span').forEach(s=>{
+s.classList.toggle('active',Number(s.dataset.value)<=selectedRating);
+});
+});
+});
+
+document.getElementById('reviewForm').addEventListener('submit',function(e){
+e.preventDefault();
+if(!selectedRating){alert('कृपया Star Rating चुनें।');return;}
+const name=document.getElementById('reviewName').value.trim();
+const feedback=document.getElementById('reviewText').value.trim();
+const message=`Gupta Electrician Customer Feedback\nName: ${name}\nRating: ${selectedRating}/5 Stars\nFeedback: ${feedback}`;
+window.open('https://wa.me/917908755832?text='+encodeURIComponent(message),'_blank');
+});
 </script>
-</body></html>
+</body>
+</html>
